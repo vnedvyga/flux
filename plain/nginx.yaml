@@ -28,6 +28,6 @@ spec:
           initialDelaySeconds: 120
           httpGet:
             path: /
-            port: 8080
+            port: 80
         resources: {}
 status: {}
