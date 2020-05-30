@@ -19,6 +19,7 @@ spec:
     spec:
       initContainers:
       - image: busybox
+        name: sleep
         command: ["sleep", "300"]
       containers:
       - image: nginx:1.17
