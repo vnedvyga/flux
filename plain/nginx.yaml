@@ -20,12 +20,12 @@ spec:
       initContainers:
       - image: busybox
         name: sleep
-        command: ["sleep", "300"]
+        command: ["sleep", "120"]
       containers:
       - image: nginx:1.17
         name: nginx
         readinessProbe:
-          initialDelaySeconds: 120
+          initialDelaySeconds: 60
           httpGet:
             path: /
             port: 80
