@@ -18,7 +18,12 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx:1.16
+      - image: nginx:1.17
         name: nginx
+        readinessProbe:
+        initialDelaySeconds: 120
+        httpGet:
+          path: /
+          port: 8080
         resources: {}
 status: {}
